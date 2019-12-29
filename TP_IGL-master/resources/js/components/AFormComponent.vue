@@ -92,6 +92,7 @@ export default {
 
             }).then(function(response)
             {
+                alert(response.res);
                 $(".sucess").html('Succès : Administrateur inseré');
             }).catch(error =>{
             this.errors=error.response.data.errors;

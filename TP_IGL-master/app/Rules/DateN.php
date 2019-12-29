@@ -36,6 +36,6 @@ class DateN implements Rule
      */
     public function message()
     {
-        return "l'age de l'étudiant doit etre resonable";
+        return "l'age doit etre resonable";
     }
 }

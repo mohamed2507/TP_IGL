@@ -21,5 +21,4 @@ Route::get('/formulaire-admin', function () {
     return view('IGL.formulaire-admin');
 });
 
-Route::post('/etudiant/register','SubmitEController@store');
-Route::post('/admin/register','SubmitAController@store');
+

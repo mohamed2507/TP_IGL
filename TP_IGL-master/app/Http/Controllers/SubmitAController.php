@@ -29,9 +29,10 @@ class SubmitAController extends Controller
             'sexe'=>request('sexe'),
             'dateN'=>request('dateN'),
             'adresse'=>request('adresse'),
-            'gmail'=>$gmail,
+            'gmail'=>$gmail
 
         ]);
+        return 'yes' ;
 
     }
 
