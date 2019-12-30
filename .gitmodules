@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/mohamed2507/ttt.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/mohamed2507/TP_IGL.git
