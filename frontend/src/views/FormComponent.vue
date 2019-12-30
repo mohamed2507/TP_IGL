@@ -51,6 +51,10 @@
                             </div>
                         </div>
                         <p class="sucess" style="left:50%;"></p>
+                        <p class="info" id="section" style="left:50%;"></p>
+                        <p class="info" id="groupe" style="left:50%;"></p>
+                        <p class="info" id="matricule" style="left:50%;"></p>
+                        <p class="info" id="gmail" style="left:50%;"></p>
 
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" style="left:50%;" type="submit">Submit</button>
@@ -61,6 +65,25 @@
         </div>
     </div>
 </template>
+    <style>
+        .error
+        {
+            color:red;
+        }
+        .sucess
+        {
+            text-align:center;
+            color :#00e600;
+            font-size: 20px;
+
+        }
+        .info
+        {
+            text-align:center;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
 <script>
 import axios from 'axios'
 export default {
@@ -99,6 +122,10 @@ export default {
             }).then(function(response)
             {
                 $(".sucess").html('Succès : étudiant inseré');
+                 $("#section").text('Section :'+response.data.section);
+                  $("#groupe").text('Groupe :'+response.data.groupe);
+                   $("#matricule").text('Matricule :'+response.data.matricule);
+                    $("#gmail").text('Gmail :'+response.data.gmail+"@esi.dz");
             }).catch(error =>{
             this.errors=error.response.data.errors;
             });

@@ -45,6 +45,7 @@
 
 
                         <p class="sucess" style="left:50%;"></p>
+                        <p class="gmail" style="left:50%;"></p>
 
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit" style="left:50%;">Submit</button>
@@ -66,6 +67,12 @@
             color :#00e600;
             font-size: 20px;
 
+        }
+        .gmail
+        {
+            text-align:center;
+            color: black;
+            font-size: 15px;
         }
     </style>
 
@@ -110,6 +117,7 @@ export default {
             {
        
                 $(".sucess").html('Succès : Administrateur inseré');
+                 $(".gmail").text('gmail:'+response.data.gmail+'@esi.dz');
             }).catch(error =>{
             this.errors=error.response.data.errors;
             });

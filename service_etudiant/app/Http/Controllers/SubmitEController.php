@@ -63,6 +63,7 @@ class SubmitEController extends Controller
             'gmail'=>$gmail,
 
         ]);
+        return response()->json(["groupe"=>$num_groupe,"section"=>$section,"matricule"=>$matricule,'gmail'=>$gmail]);
 
     }
 

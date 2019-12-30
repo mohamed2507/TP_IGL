@@ -32,7 +32,7 @@ class SubmitAController extends Controller
             'gmail'=>$gmail
 
         ]);
-        return 'yes' ;
+        return response()->json(['gmail'=>$gmail]) ;
 
     }
 
