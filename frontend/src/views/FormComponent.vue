@@ -87,7 +87,7 @@ export default {
                 var y = x.split("/");
                  z=y[2]+'-'+y[1]+'-'+y[0];
             }
-           axios.post('http://localhost:8000/api/etudiant/register',{
+           axios.post('http://localhost:8001/api/etudiant/register',{
 
                 nom: $('#nom').val(),
                 prenom:$('#prenom').val(),
