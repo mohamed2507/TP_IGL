@@ -22,5 +22,5 @@
 - lancer le serveur du laravel a travers la commande : php artisan serve
 - configurer la base de donné pour chaque service
 - lancez la commande : php artisan migrate pour la migration des tables 
-- ** URL : localhost:8080/form-etudiant ** pour acceder au formulaire d'etudiant
-- ** URL : localhost:8080/form-admin ** pour acceder au formulaire d'admin
+- **URL : localhost:8080/form-etudiant** pour acceder au formulaire d'etudiant
+- **URL : localhost:8080/form-admin** pour acceder au formulaire d'admin
