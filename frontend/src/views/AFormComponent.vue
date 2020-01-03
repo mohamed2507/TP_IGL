@@ -48,7 +48,7 @@
                         <p class="gmail" style="left:50%;"></p>
 
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit" style="left:50%;">Submit</button>
+                            <button class="btn btn--radius btn--green" type="submit" id="submit" style="left:50%;">Submit</button>
                         </div>
                     </form>
                 </div>
