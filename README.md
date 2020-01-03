@@ -26,6 +26,7 @@
 - **URL : localhost:8080/form-admin** pour acceder au formulaire d'admin
 
 ### Docker
+- au niveau de env file DB_HOST=mysql-db
 - docker-compose build && docker-compose up -d && docker-compose logs -f
 - docker exec -it laravel-app bash -c "sudo -u devuser /bin/bash"
 - php artisan key:generate
